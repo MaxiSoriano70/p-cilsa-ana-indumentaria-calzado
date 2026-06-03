@@ -1,9 +1,10 @@
+import CarouselAnaliaValdez from "../components/CarouselAnaliaValdez";
 
 const Home = () => {
     return (
-        <div>
-        
-        </div>
+        <>
+            <CarouselAnaliaValdez/>
+        </>
     )
 }
 
