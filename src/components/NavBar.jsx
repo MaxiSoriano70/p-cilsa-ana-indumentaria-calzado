@@ -38,7 +38,7 @@ const NavBar = () => {
     };
 
     const btnSignUp = (
-        <button id="btnSignUp" className={style.btnControlMenu}>Sign up</button>
+        <button id="btnSignUp" className={style.btnControlMenuSignUp}>Sign up</button>
     );
 
     const nav = (
@@ -77,16 +77,16 @@ const NavBar = () => {
 
                 <div className={style.controlesUsuario}>
                     <Link className={style.iconoMenu} to="/buscar">
-                        <FontAwesomeIcon icon={faMagnifyingGlass} />
+                        <FontAwesomeIcon className={style.iconoNavBar} icon={faMagnifyingGlass} />
                     </Link>
                     <Link className={style.iconoMenu} to="/carrito">
-                        <FontAwesomeIcon icon={faBagShopping} />
+                        <FontAwesomeIcon className={style.iconoNavBar} icon={faBagShopping} />
                     </Link>
 
                     {!isMobile && btnSignUp}
 
                     <button id="btnMenu" className={style.btnControlMenu + " " + style.btnMenu} onClick={toggleMenu}>
-                        <FontAwesomeIcon icon={faBars} />
+                        <FontAwesomeIcon className={style.iconoNavBar} icon={faBars} />
                     </button>
                 </div>
             </section>

@@ -35,6 +35,7 @@ header{
     color: inherit;
     text-decoration: none;
     font-size: 25px;
+    font-weight: 700;
 }
 
 .menuOpciones{
@@ -45,6 +46,8 @@ header{
     display: flex;
     flex-direction: row;
     gap: 15px;
+    margin: 0;
+    padding: 0;
 }
 
 .menuOpciones .menuLi{
@@ -54,6 +57,7 @@ header{
     list-style: none;
     margin: 10px 0;
     font-size: 18px;
+    font-weight: 700;
 }
 
 .linkMenu:link,
@@ -90,9 +94,12 @@ header{
     filter: brightness(0.7);
 }
 
-.btnControlMenu{
+.btnControlMenuSignUp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
-    padding: 8px 12px;
+    padding: 8px 16px;
     margin: 0;
     font: inherit;
     cursor: pointer;
@@ -100,7 +107,40 @@ header{
     -webkit-appearance: none;
     appearance: none;
     text-align: inherit;
-    border-radius: 8px;
+    background-color: var(--letra-ligth-color);
+    color: var(--fondo-ligth-color);
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btnControlMenuSignUp:hover{
+    background-color: #2b2320;
+}
+
+.btnControlMenuSignUp:active{
+    transform: scale(0.96);
+    background-color: #1a1513;
+}
+
+.btnControlMenuSignUp:focus-visible{
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+.btnControlMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 5.5px 5px;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: inherit;
     background-color: var(--letra-ligth-color);
     color: var(--fondo-ligth-color);
     transition: background-color 0.2s ease, transform 0.15s ease;
@@ -118,6 +158,20 @@ header{
 .btnControlMenu:focus-visible{
     outline: 2px solid #000;
     outline-offset: 2px;
+}
+
+.btnMenuIcono{
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.iconoNavBar{
+    font-size: 24px;
+    line-height: 1;
 }
 
 .btnMenu{
