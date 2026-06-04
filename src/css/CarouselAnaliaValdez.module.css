@@ -1,8 +1,8 @@
 .analiaValdezCarousel{
     height: 250px;
     object-fit: cover;
+    object-position: right center;
     aspect-ratio: 16/9;
-    filter: brightness(0.6);
 }
 
 .containerImg {
@@ -15,45 +15,215 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
+    padding: 10px;
     width: 90%;
-    color: white;
+    color: black;
+    gap: 10px;
 }
 
-.textCarrusel .tituloCarrusel {
-    font-size: 1.5rem;
-    font-weight: bold;
+.h4TituloCarrusel {
+    font-size: 16px;
+    font-weight: 900;
     text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: "Urbanist", sans-serif;
+    text-trasnform: uppercase;
+}
+
+.h3TituloCarrusel {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: "Urbanist", sans-serif;
+}
+
+.btnCarrusel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 5px 12px;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: inherit;
+    background-color: #DD4488;
+    color: white;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Urbanist", sans-serif;
+    text-trasnform: uppercase;
+}
+
+.btnCarrusel:hover{
+    background-color: #C13873;
+}
+
+.btnCarrusel:active{
+    transform: scale(0.96);
+    background-color: #A62F62;
+}
+
+.btnCarrusel:focus-visible{
+    outline: 2px solid #000;
+    outline-offset: 2px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
     .analiaValdezCarousel{
-        height: 450px;
+        height: 400px;
+        object-fit: cover;
+        object-position: right center;
+        aspect-ratio: 16/9;
     }
 
     .textCarrusel {
-        width: 80%;
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        width: 50%;
+        color: black;
+        gap: 15px;
     }
 
-    .textCarrusel .tituloCarrusel {
-        font-size: 2rem;
-        font-weight: bold;
+    .h4TituloCarrusel {
+        font-size: 16px;
+        font-weight: 900;
         text-align: center;
+        padding: 0;
+        margin: 0;
+        font-family: "Urbanist", sans-serif;
+    }
+
+    .h3TituloCarrusel {
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-family: "Urbanist", sans-serif;
+    }
+
+    .btnCarrusel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        padding: 10px 16px;
+        margin: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: none;
+        -webkit-appearance: none;
+        appearance: none;
+        text-align: inherit;
+        background-color: #DD4488;
+        color: white;
+        transition: background-color 0.2s ease, transform 0.15s ease;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: "Urbanist", sans-serif;
+    }
+
+    .btnCarrusel:hover{
+        background-color: #C13873;
+    }
+
+    .btnCarrusel:active{
+        transform: scale(0.96);
+        background-color: #A62F62;
+    }
+
+    .btnCarrusel:focus-visible{
+        outline: 2px solid #000;
+        outline-offset: 2px;
     }
 }
 
 @media screen and (min-width: 992px){
     .analiaValdezCarousel{
         height: 600px;
+        object-fit: cover;
+        object-position: right center;
+        aspect-ratio: 16/9;
+    }
+
+    .containerImg {
+        position: relative;
     }
 
     .textCarrusel {
-        width: 70%;
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        width: 50%;
+        color: black;
+        gap: 20px;
     }
 
-    .textCarrusel .tituloCarrusel {
-        font-size: 3rem;
-        font-weight: bold;
+    .h4TituloCarrusel {
+        font-size: 20px;
+        font-weight: 900;
         text-align: center;
+        padding: 0;
+        margin: 0;
+        font-family: "Urbanist", sans-serif;
+    }
+
+    .h3TituloCarrusel {
+        font-size: 48px;
+        font-weight: 400;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-family: "Urbanist", sans-serif;
+    }
+
+    .btnCarrusel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        padding: 10px 32px;
+        margin: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: none;
+        -webkit-appearance: none;
+        appearance: none;
+        text-align: inherit;
+        background-color: #DD4488;
+        color: white;
+        transition: background-color 0.2s ease, transform 0.15s ease;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: "Urbanist", sans-serif;
+    }
+
+    .btnCarrusel:hover{
+        background-color: #C13873;
+    }
+
+    .btnCarrusel:active{
+        transform: scale(0.96);
+        background-color: #A62F62;
+    }
+
+    .btnCarrusel:focus-visible{
+        outline: 2px solid #000;
+        outline-offset: 2px;
     }
 }
