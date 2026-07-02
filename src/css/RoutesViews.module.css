@@ -1,0 +1,24 @@
+:root{
+    --fondo-ligth:#fbf5f1;
+    --fondo-dark: #282828;
+    --color-negro: #000000;
+    --color-negro-aux: #434343;
+    --color-dark: #717171;
+}
+
+.mainPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.ligth{
+    background-color: var(--fondo-ligth);
+}
+
+.dark{
+    background-color: var(--fondo-dark);
+}
