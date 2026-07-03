@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass, faBagShopping, faBars } from '@fortawesome/free-solid-svg-icons';
 import style from '../css/NavBar.module.css';
 
 const NavBar = () => {
@@ -75,16 +77,16 @@ const NavBar = () => {
 
                 <div className={style.controlesUsuario}>
                     <Link className={style.iconoMenu} to="/buscar">
-                        <i className="fa-solid fa-magnifying-glass"></i>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </Link>
                     <Link className={style.iconoMenu} to="/carrito">
-                        <i className="fa-solid fa-bag-shopping"></i>
+                        <FontAwesomeIcon icon={faBagShopping} />
                     </Link>
 
                     {!isMobile && btnSignUp}
 
-                    <button id="btnMenu" className={style.btnControlMenu + " "+style.btnMenu} onClick={toggleMenu}>
-                        <i className="fa-solid fa-bars"></i>
+                    <button id="btnMenu" className={style.btnControlMenu + " " + style.btnMenu} onClick={toggleMenu}>
+                        <FontAwesomeIcon icon={faBars} />
                     </button>
                 </div>
             </section>

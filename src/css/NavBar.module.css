@@ -26,11 +26,6 @@ header{
     height: 100%;
     margin: 0 auto;
     padding: 0 10px;
-    border: solid 3px black;
-}
-
-.logo{
-
 }
 
 .linkLogo:link,
@@ -44,7 +39,6 @@ header{
 
 .menuOpciones{
     height: auto;
-    border: solid 3px red;
 }
 
 .menuOpciones .menuUl{
