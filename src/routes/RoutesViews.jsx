@@ -1,4 +1,4 @@
-import style from '../css/RoutesViews.module.css'
+import style from '../css/RoutesViews.module.css';
 import { Route, Routes } from 'react-router-dom';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
@@ -10,7 +10,7 @@ const RoutesViews = () => {
     return (
         <>
             <NavBar/>
-                <main className={style.mainPrincipal + " " +style.ligth}>
+                <main className={`${style.mainPrincipal} ${style.ligth}`}>
                     <Routes>
                         <Route path={routes.home} element={<Home/>}/>
                         <Route path={routes.notFound} element={<Error404/>}/>

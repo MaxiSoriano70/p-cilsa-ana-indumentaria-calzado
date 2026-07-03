@@ -1,0 +1,159 @@
+:root{
+    --fondo-ligth-color: #fff;
+    --letra-ligth-color: #000;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+}
+
+.modeLigth{
+    color: var(--letra-ligth-color);
+    background-color: var(--fondo-ligth-color);
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    border: solid 3px black;
+}
+
+.logo{
+
+}
+
+.linkLogo:link,
+.linkLogo:visited,
+.linkLogo:hover,
+.linkLogo:active {
+    color: inherit;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.menuOpciones{
+    height: auto;
+    border: solid 3px red;
+}
+
+.menuOpciones .menuUl{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.menuOpciones .menuLi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.linkMenu:link,
+.linkMenu:visited,
+.linkMenu:hover,
+.linkMenu:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.linkMenu:hover{
+    filter: brightness(0.7);
+}
+
+.controlesUsuario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    order: 1;
+}
+
+.iconoMenu:link,
+.iconoMenu:visited,
+.iconoMenu:hover,
+.iconoMenu:active {
+    color: inherit;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.iconoMenu:hover{
+    filter: brightness(0.7);
+}
+
+.btnControlMenu{
+    border: none;
+    padding: 8px 12px;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: inherit;
+    border-radius: 8px;
+    background-color: var(--letra-ligth-color);
+    color: var(--fondo-ligth-color);
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btnControlMenu:hover{
+    background-color: #2b2320;
+}
+
+.btnControlMenu:active{
+    transform: scale(0.96);
+    background-color: #1a1513;
+}
+
+.btnControlMenu:focus-visible{
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+.btnMenu{
+    display: none;
+}
+
+@media (max-width: 850px){
+    .btnMenu{
+        display: block;
+    }
+
+    .menuOpciones{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+
+    .menuOpciones.mostrar{
+        max-height: 500px;
+    }
+
+    .menuOpciones.min{
+        height: calc(100vh - 80px);
+        overflow-y: auto;
+    }
+
+    .menuOpciones .menuUl{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+    }
+}
