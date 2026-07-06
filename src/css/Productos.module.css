@@ -1,0 +1,205 @@
+.contenedorProductos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.h4Productos{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Urbanist", sans-serif;
+    text-transform: uppercase;
+}
+
+.h3Productos{
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 36px;
+    font-family: "Urbanist", sans-serif;
+    text-transform: capitalize;
+}
+
+.productos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.cardProducto{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.contenedorImg {
+    width: 100%;
+    position: relative;
+}
+
+.btnDetalleProducto {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btnDetalleProducto:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.descripcionProducto{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nombreProducto{
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "Urbanist", sans-serif;
+    text-transform: capitalize;
+}
+
+.precioProducto{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Urbanist", sans-serif;
+}
+
+.footerProductos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btnVerMasProductos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 20px;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    text-align: inherit;
+    background-color: #DD4488;
+    color: white;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Urbanist", sans-serif;
+    text-transform: uppercase;
+}
+
+.btnVerMasProductos:hover{
+    background-color: #C13873;
+}
+
+.btnVerMasProductos:active{
+    transform: scale(0.96);
+    background-color: #A62F62;
+}
+
+.btnVerMasProductos:focus-visible{
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+@media (max-width: 980px){
+    .cardProducto{
+        width: 200px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 675px){
+    .contenedorProductos{
+        padding: 10px;
+    }
+
+    .cardProducto{
+        width: 175px;
+    }
+
+    .btnVerMasProductos{
+        padding: 7.5px 15px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px){
+    .h4Productos{
+        font-size: 16px;
+    }
+
+    .h3Productos{
+        font-size: 24px;
+    }
+
+    .productos{
+        gap: 10px;
+        padding-top: 15px;
+    }
+
+    .cardProducto{
+        width: 150px;
+    }
+
+    .btnDetalleProducto {
+        width: 24px;
+        height: 24px;
+        padding: 7.5px;
+    }
+
+    .nombreProducto{
+        font-size: 16px;
+    }
+
+    .precioProducto{
+        font-size: 14px;
+    }
+
+    .btnVerMasProductos{
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+}
