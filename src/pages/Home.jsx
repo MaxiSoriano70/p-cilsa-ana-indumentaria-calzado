@@ -1,6 +1,7 @@
 import CarouselAnaliaValdez from "../components/CarouselAnaliaValdez";
 import NuestrasCategorias from "../components/NuestrasCategorias";
 import Productos from "../components/Productos";
+import Servicios from "../components/Servicios";
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
             <CarouselAnaliaValdez/>
             <NuestrasCategorias/>
             <Productos/>
+            <Servicios/>
         </>
     )
 }
