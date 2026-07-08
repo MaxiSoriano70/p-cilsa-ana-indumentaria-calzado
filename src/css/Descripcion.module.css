@@ -1,0 +1,101 @@
+.contenedorDescripcion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 50px;
+    background-color: white;
+}
+
+.fLogo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoDescripcion{
+    width: 600px;
+}
+
+.aDescripcion{
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.h3Descripcion{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: "Urbanist", sans-serif;
+    text-transform: uppercase;
+}
+
+.h4Descripcion{
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "Urbanist", sans-serif;
+}
+
+.txtDescripcion{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Urbanist", sans-serif;
+}
+
+@media (max-width: 1050px){
+    .contenedorDescripcion{
+        gap: 20px;
+    }
+
+    .logoDescripcion{
+        width: 100%;
+    }
+
+    .aDescripcion{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 965px){
+    .h3Descripcion{
+        font-size: 24px;
+    }
+
+    .h4Descripcion{
+        font-size: 18px;
+    }
+
+    .txtDescripcion{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 775px){
+    .contenedorDescripcion{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .fLogo{
+        width: 100%;
+    }
+
+    .logoDescripcion{
+        width: 300px;
+    }
+
+    .aDescripcion{
+        width: 100%;
+    }
+}
