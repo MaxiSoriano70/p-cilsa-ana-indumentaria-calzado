@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faBagShopping, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faBagShopping, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import style from '../css/NavBar.module.css';
 
 const NavBar = () => {
@@ -85,8 +85,14 @@ const NavBar = () => {
 
                     {!isMobile && btnSignUp}
 
-                    <button id="btnMenu" className={style.btnControlMenu + " " + style.btnMenu} onClick={toggleMenu}>
-                        <FontAwesomeIcon className={style.iconoNavBar} icon={faBars} />
+                    <button
+                        id="btnMenu"
+                        className={style.btnControlMenu + " " + style.btnMenu}
+                        onClick={toggleMenu}
+                        aria-label={menuAbierto ? "Cerrar menú" : "Abrir menú"}
+                        aria-expanded={menuAbierto}
+                    >
+                        <FontAwesomeIcon className={style.iconoNavBar} icon={menuAbierto ? faXmark : faBars} />
                     </button>
                 </div>
             </section>
