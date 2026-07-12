@@ -9,6 +9,13 @@ const NavBar = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 850);
     const [isMin, setIsMin] = useState(false);
 
+    const [carrito, setCarrito] = useState([
+        { id: 1, nombre: "Producto A", cantidad: 2 },
+        { id: 2, nombre: "Producto B", cantidad: 1 },
+    ]);
+
+    const cantidadCarrito = carrito.reduce((total, item) => total + item.cantidad, 0);
+
     useEffect(() => {
         const responsiveY = () => {
             if (window.innerHeight <= 362) {
@@ -79,8 +86,13 @@ const NavBar = () => {
                     <Link className={style.iconoMenu} to="/buscar">
                         <FontAwesomeIcon className={style.iconoNavBar} icon={faMagnifyingGlass} />
                     </Link>
-                    <Link className={style.iconoMenu} to="/carrito">
+                    <Link className={`${style.iconoMenu} ${style.contenedorIconoCarrito}`} to="/carrito">
                         <FontAwesomeIcon className={style.iconoNavBar} icon={faBagShopping} />
+                        {cantidadCarrito > 0 && (
+                            <span className={style.badgeCarrito}>
+                                {cantidadCarrito > 99 ? "99+" : cantidadCarrito}
+                            </span>
+                        )}
                     </Link>
 
                     {!isMobile && btnSignUp}
