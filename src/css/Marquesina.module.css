@@ -1,0 +1,40 @@
+.contenedorM{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 34px;
+    overflow: hidden;
+    background-color: black;
+    z-index: 101;
+}
+
+.track{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+    animation: desplazar 20s linear infinite;
+}
+
+.txtM{
+    margin: 0 60px 0 0;
+    padding: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Urbanist", sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Se mueve -25% porque el track tiene 4 grupos idénticos:
+   avanzar el ancho de UN grupo (1/4 del total) = loop perfecto */
+@keyframes desplazar {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-25%);
+    }
+}

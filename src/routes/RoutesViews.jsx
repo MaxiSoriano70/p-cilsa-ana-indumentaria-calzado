@@ -5,10 +5,12 @@ import NavBar from '../components/NavBar';
 import { routes } from '../assets/utils/routes';
 import Home from '../pages/Home';
 import Error404 from '../pages/Error404';
+import Marquesina from '../components/Marquesina';
 
 const RoutesViews = () => {
     return (
         <>
+            <Marquesina/>
             <NavBar/>
                 <main className={`${style.mainPrincipal} ${style.ligth}`}>
                     <Routes>
